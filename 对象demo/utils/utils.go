@@ -57,9 +57,9 @@ func (this *FamilyAccount) MainMenu() {
 func (this *FamilyAccount) checkdetail() {
 	fmt.Println("------当前收支明细------")
 	if !this.check {
-		fmt.Println("还没有收支记录，请先登记一笔吧^_^\n")
+		fmt.Print("还没有收支记录，请先登记一笔吧^_^\n\n")
 	} else {
-		fmt.Printf(this.detail)
+		fmt.Print(this.detail)
 		fmt.Println()
 	}
 }
